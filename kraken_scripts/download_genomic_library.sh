@@ -30,8 +30,8 @@ set -e  # Stop on error
 LIBRARY_DIR="$KRAKEN_DB_NAME/library"
 NCBI_SERVER="ftp.ncbi.nih.gov"
 FTP_SERVER="ftp://$NCBI_SERVER"
-RSYNC_SERVER="rsync://$NCBI_SERVER"
-THIS_DIR=$PWD
+# RSYNC_SERVER="rsync://$NCBI_SERVER"  # unused variable
+# THIS_DIR=$PWD  # unused variable
 
 case "$1" in
   "fungi")
