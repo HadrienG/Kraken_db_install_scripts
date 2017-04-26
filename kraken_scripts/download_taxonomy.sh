@@ -23,6 +23,7 @@
 set -u  # Protect against uninitialized vars.
 set -e  # Stop on error
 
+KRAKEN_DB_NAME=$1
 TAXONOMY_DIR="$KRAKEN_DB_NAME/taxonomy"
 NCBI_SERVER="ftp.ncbi.nih.gov"
 FTP_SERVER="ftp://$NCBI_SERVER"

@@ -10,6 +10,7 @@ instead of GIs
 ## Dependencies
 
 * [Kraken](https://github.com/DerrickWood/kraken) installed and in your $PATH
+* [bioperl](http://bioperl.org)
 
 ## Usage
 
