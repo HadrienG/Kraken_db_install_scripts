@@ -38,6 +38,7 @@ function report_time_elapsed() {
 
 start_time=$(date "+%s.%N")
 
+KRAKEN_DB_NAME=$1
 DATABASE_DIR="$KRAKEN_DB_NAME"
 
 if [ ! -d "$DATABASE_DIR" ]

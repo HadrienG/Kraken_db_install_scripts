@@ -14,7 +14,16 @@ instead of GIs
 
 ## Usage
 
-*Todo*
+```shell
+Kraken_db_install_scripts/kraken_scripts/download_taxonomy.sh test
+# download whichever library you want with the perl scripts
+# ex:
+perl download_viral.pl
+find library/viral/ -name '*.fna' -print0 | \
+    xargs -0 -I{} -n1 Kraken_db_install_scripts/kraken_scripts/kraken-build \
+    --add-to-library {} --db test
+
+```
 
 ## License
 

@@ -48,7 +48,7 @@ fi
 
 if [ ! -e "gimap.flag" ]
 then
-  gzip -d nucl_gb.accession2taxid .gz
+  gzip -d nucl_gb.accession2taxid.gz
   touch gimap.flag
   echo "Uncompressed Accession to taxon map"
 fi
